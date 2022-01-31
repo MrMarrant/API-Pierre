@@ -39,7 +39,7 @@ module.exports ={
 }
 ```
 
-Ici, postgres est utilisé, mais mysql ou mariadb fonctionne très bien aussi.
+Ici, postgres est utilisé, mais mysql ou mariadb fonctionne très bien aussi.<br>
 Il est conseillé d'indiquer de préférence les variables d'environnement dans un fichier ```.env```.
 
 ## Quatrième étape :
