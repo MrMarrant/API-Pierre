@@ -43,7 +43,7 @@ Ici, postgres est utilisé, mais mysql ou mariadb fonctionne très bien aussi.<b
 Il est conseillé d'indiquer de préférence les variables d'environnement dans un fichier ```.env```.
 
 ## Quatrième étape :
-Récupérer la clé api sur https://developer.riotgames.com/ et la définir dans un fichier ```.env```.
+Récupérer la clé api sur https://developer.riotgames.com/ et la définir dans un fichier ```.env``` avec comme nom de variable : ```API_KEY_LOL```.
 
 ## Cinquième étape :
  Lancer le Serveur 
