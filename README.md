@@ -40,8 +40,12 @@ module.exports ={
 ```
 
 Ici, postgres est utilisé, mais mysql ou mariadb fonctionne très bien aussi.
+Il est conseillé d'indiquer de préférence les variables d'environnement dans un fichier ```.env```.
 
 ## Quatrième étape :
+Récupérer la clé api sur https://developer.riotgames.com/ et la définir dans un fichier ```.env```.
+
+## Cinquième étape :
  Lancer le Serveur 
 
 `node server.js` ou `nodemon server.js` s'il est installé.
