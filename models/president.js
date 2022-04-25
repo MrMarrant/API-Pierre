@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         score: DataTypes.INTEGER,
     }, {
         sequelize,
-        modelName: 'Player_President',
+        modelName: 'player_president',
     });
     return PlayerPresident;
 };
