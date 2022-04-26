@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     maxDeath: DataTypes.INTEGER,
   }, {
     sequelize,
+    //! Nom du modèle commence par une majuscule et sur la bdd il dois finir avec un s
     modelName: 'User',
   });
   return User;

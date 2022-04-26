@@ -3,7 +3,7 @@ const {
     Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-    class PlayerPresident extends Model {
+    class Player extends Model {
         /**
          * Helper method for defining associations.
          * This method is not a part of Sequelize lifecycle.
@@ -12,12 +12,13 @@ module.exports = (sequelize, DataTypes) => {
         static associate(models) {
         }
     };
-    PlayerPresident.init({
+    Player.init({
         idDiscord: DataTypes.STRING,
         score: DataTypes.INTEGER,
     }, {
         sequelize,
-        modelName: 'player_president',
+        //! Nom du modèle commence par une majuscule et sur la bdd il dois finir avec un s
+        modelName: 'Player',
     });
-    return PlayerPresident;
+    return Player;
 };
