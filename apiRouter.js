@@ -1,6 +1,6 @@
 var express = require("express");
 var usersController = require("./routes/usersController");
-var gamePresidentController = require("./routes/gamePresidentController");
+var playersPresidentController = require("./routes/playersPresidentController");
 
 exports.router = (function(){
     var apiRouter = express.Router();
@@ -10,7 +10,7 @@ exports.router = (function(){
     apiRouter.route("/users/rank/").get(usersController.getranking);
     
     // Route GamePresident
-    apiRouter.route("/president/scores/").get(gamePresidentController.getScore);
-    apiRouter.route("/president/setscore/").post(gamePresidentController.setScore);
+    apiRouter.route("/president/scores/").get(playersPresidentController.getScore);
+    apiRouter.route("/president/setscore/").post(playersPresidentController.setScore);
     return apiRouter;
 }) ();

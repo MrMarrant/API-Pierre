@@ -1,7 +1,6 @@
 var models = require("../models");
 const fetch = require("node-fetch");
-require("dotenv").config();
-// Clé API à changer tout les jours putain
+// Clé API de lol
 const apiRiot = process.env.API_KEY_LOL;
 
 module.exports = {

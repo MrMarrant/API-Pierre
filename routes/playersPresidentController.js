@@ -1,9 +1,8 @@
 var models = require("../models");
-require("dotenv").config();
 
 module.exports = {
     getScore: function (req, res) {
-        models.PlayerPresident.findAll({
+        models.Player.findAll({
             order: [
                 // Will escape title and validate DESC against a list of valid direction parameters
                 ["score", "DESC"],
@@ -31,12 +30,12 @@ module.exports = {
         var idDiscord = req.query.idDiscord;
         done();
         function done() {
-            models.PlayerPresident.findOne({
+            models.Player.findOne({
                 where: { idDiscord: idDiscord },
             })
             .then(async function (playerFound) {
                 if (!playerFound) {
-                    var newPlayer = models.PlayerPresident.create({
+                    var newPlayer = models.Player.create({
                         idDiscord: idDiscord,
                         score: 1,
                     })
@@ -54,7 +53,7 @@ module.exports = {
                     })
                 }
                 else {
-                    newScore = userFound.score +1;
+                    newScore = playerFound.score +1;
                     playerFound.update({
                         score: newScore,
                     });
