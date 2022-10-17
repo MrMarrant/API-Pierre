@@ -1,0 +1,30 @@
+{
+  "name": "countdeathlol",
+  "version": "1.0.0",
+  "description": "APi récupérant sur lapi de lol mdr",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^2.5.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "sequelize": "^6.9.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
