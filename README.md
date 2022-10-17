@@ -1,4 +1,6 @@
-# CountDeath
+# API-PIerre
+
+C'est un projet permetttant de faire des appels HTTP sur une API Riot Games, ainsi que sur une BDD distant.
 
 # Première étape :
 
@@ -55,7 +57,7 @@ Récupérer la clé api sur https://developer.riotgames.com/ et la définir dans
 
 Ne pas modifier le fichier config.js dans le dossier config.
 Les dossiers en rapport avec l'ide que vous utilisez (.vscode, .intt ect).
-Ne jamais push le dossier node_modules!
+Ne jamais push le dossier node_modules ainsi que le fichier .env.
 
 
 # Git
